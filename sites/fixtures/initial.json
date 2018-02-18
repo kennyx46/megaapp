@@ -1,0 +1,83 @@
+[
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "name": "Demo Site"
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 2,
+    "fields": {
+      "name": "ABC Site"
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 3,
+    "fields": {
+      "name": "XYZ Site"
+    }
+  },
+  {
+    "model": "sites.detail",
+    "pk": 1,
+    "fields": {
+      "a": "12.00",
+      "b": "16.00",
+      "created_at": "2015-02-1T00:00:00+00:00",
+      "site": 1
+    }
+  },
+  {
+    "model": "sites.detail",
+    "pk": 2,
+    "fields": {
+      "a": "20.00",
+      "b": "100.00",
+      "created_at": "2015-02-3T00:00:00+00:00",
+      "site": 1
+    }
+  },
+  {
+    "model": "sites.detail",
+    "pk": 3,
+    "fields": {
+      "a": "20.00",
+      "b": "80.00",
+      "created_at": "2015-02-10T00:00:00+00:00",
+      "site": 1
+    }
+  },
+  {
+    "model": "sites.detail",
+    "pk": 4,
+    "fields": {
+      "a": "5.00",
+      "b": "15.00",
+      "created_at": "2015-02-3T00:00:00+00:00",
+      "site": 3
+    }
+  },
+  {
+    "model": "sites.detail",
+    "pk": 5,
+    "fields": {
+      "a": "5.00",
+      "b": "15.00",
+      "created_at": "2015-02-15T00:00:00+00:00",
+      "site": 3
+    }
+  },
+  {
+    "model": "sites.detail",
+    "pk": 6,
+    "fields": {
+      "a": "5.00",
+      "b": "15.00",
+      "created_at": "2015-02-28T00:00:00+00:00",
+      "site": 2
+    }
+  }
+]

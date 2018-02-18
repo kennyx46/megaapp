@@ -1,0 +1,42 @@
+{% load sitetags %}
+
+<html>
+    <head>
+        <title>3MW - Application Task</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="{% active_path 'sites' %} {% active_path '^/$' %}" role="presentation">
+                            <a href="/sites">Sites</a>
+                        </li>
+                        <li class="{% active_path 'summary' %}" role="presentation">
+                            <a href="/summary">Summary</a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--/.nav-collapse -->
+        </nav>
+
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>

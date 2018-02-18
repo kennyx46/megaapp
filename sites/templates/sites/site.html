@@ -1,0 +1,29 @@
+{% extends 'sites/base.html' %}
+
+{% block content %}
+    <h1>Site Details - {{site.name}}</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>
+                    <strong>Date</strong>
+                </td>
+                <td>
+                    <strong>A Value</strong>
+                </td>
+                <td>
+                    <strong>B Value</strong>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for detail in details %}
+                <tr>
+                    <td>{{detail.created_at|date:"M j, Y"}}</td>
+                    <td>{{detail.a}}</td>
+                    <td>{{detail.b}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
